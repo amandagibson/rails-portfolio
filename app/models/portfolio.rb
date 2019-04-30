@@ -4,4 +4,6 @@ class Portfolio < ApplicationRecord
   def self.react
     where(subtitle: 'ReactJS')
   end
+
+  scope :ruby_on_rails_portfolio_items, -> { where(subtitle: 'Ruby on Rails') }
 end
